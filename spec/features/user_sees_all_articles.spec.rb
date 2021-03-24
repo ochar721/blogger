@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 describe "user sees all articles" do
   describe "they visit /articles" do
@@ -9,7 +9,7 @@ describe "user sees all articles" do
       visit '/articles'
 
       expect(page).to have_content(article_1.title)
-      expect(page).to have_content(article_s.title)
+      expect(page).to have_content(article_2.title)
     end
   end
 end
